@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* CSS RESET BY MYE WEB */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+  -webkit-text-size-adjust: none; 
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+body {
+	line-height: 1;
+	background-color: #1e1e2f;
+	color: #f0f0f5;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; /* loaded 300 and 700*/
+}
+
+header {
+	border-top: 40px solid #ff7b54;
+	background-image: url(../images/sun.png);
+	background-repeat: no-repeat;
+	background-color: #2d2d44;
+}
+
+header h1 {
+	color: #ffcc29;
+	font-size: 3rem;
+	padding: .5rem 0 .5rem 60px;
+}
+
+header, nav, main, footer {
+	max-width: 960px; 
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #2d2d44;
+}
+
+nav li {
+	float: left;
+	width: 25%;
+}
+
+nav li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: .5rem 0;
+	width: 100%;
+	text-align: center;
+	border-right: 1px solid #444;
+}
+
+nav li.active a {
+	background-color: #ff7b54;
+}
+
+main {
+	padding: .3rem 2%; 
+	display: block;
+}
+
+main h1 {
+	color: #ffcc29;
+	font-size: 2.2rem;
+	padding-top: 1rem;
+}
+
+main h2 {
+	color: #ffcc29;
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+
+main p {
+	line-height: 150%;
+	padding-bottom: .5rem;
+}
+
+main fieldset {
+	border: 1px solid #555;
+	border-radius: 15px;
+	padding: 1rem 2%;
+	margin-top: 1rem;
+	background-color: #2d2d44;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main fieldset legend {
+	color: #ff7b54; 
+	font-weight: 700;
+}
+
+main form label {
+	display: block;
+	padding: .4rem 0;
+	font-size: .85rem;
+}
+
+main form span {
+	display: block;
+	font-size: .8rem;
+	color: #ff7b54;
+}
+
+main form input {
+	width: 6.5rem;
+	font-size: 1rem;
+	padding: 0.3rem;
+	border: 1px solid #555;
+	border-radius: 5px;
+	background-color: #2d2d44;
+	color: #f0f0f5;
+}
+
+main form select {
+	width: 15.5rem;
+	padding: 0.4rem;
+	border-radius: 5px;
+	border: 1px solid #555;
+	background-color: #2d2d44;
+	color: #f0f0f5;
+}
+
+main button {
+	width: 240px;
+	border: none;
+	padding: .8rem;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 20px;
+	margin-top: 1rem;
+	background: #ff7b54;
+	background: linear-gradient(to bottom,  #ff7b54 1%,#ffcc29 100%);
+	transition: background 0.3s ease-in-out;
+}
+
+main button:hover {
+	background: linear-gradient(to bottom,  #ffcc29 1%,#ff7b54 100%);
+}
+
+footer {
+	text-align: center;
+	background: #2d2d44;
+	color: #fff;
+	font-size: .75rem;
+	padding: 1.5rem 0;
+}
+
+.keepOpen {
+	clear: both;
+}
+
+main figure img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+@media only screen and (min-width: 30em) {
+   main figure {
+		width: 70%;
+		float: right;
+	} 
+}
